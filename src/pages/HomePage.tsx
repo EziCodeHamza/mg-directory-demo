@@ -51,7 +51,7 @@ export default function HomePage() {
 
   return (
     <div className="flex-1 flex flex-col md:flex-row min-h-0">
-      {/* ===== LEFT: Listings Panel ===== */
+      {/* ===== LEFT: Listings Panel ===== */}
       <div className="w-full md:w-[400px] lg:w-[460px] flex flex-col bg-white border-r border-gray-100 shrink-0 md:h-full overflow-hidden">
         {/* Filter bar */}
         <div className="shrink-0">
