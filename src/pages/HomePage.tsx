@@ -50,9 +50,9 @@ export default function HomePage() {
   };
 
   return (
-    <div className="flex-1 flex flex-col md:flex-row overflow-hidden">
-      {/* ===== LEFT: Listings Panel ===== */}
-      <div className="w-full md:w-[400px] lg:w-[460px] flex flex-col bg-white border-r border-gray-100 shrink-0 md:h-full">
+    <div className="flex-1 flex flex-col md:flex-row min-h-0">
+      {/* ===== LEFT: Listings Panel ===== */
+      <div className="w-full md:w-[400px] lg:w-[460px] flex flex-col bg-white border-r border-gray-100 shrink-0 md:h-full overflow-hidden">
         {/* Filter bar */}
         <div className="shrink-0">
           <FilterBar
@@ -98,7 +98,7 @@ export default function HomePage() {
         </div>
 
         {/* Scrollable listings */}
-        <div className={`flex-1 overflow-y-auto listings-scroll ${showMap ? 'hidden md:block' : 'block'}`}>
+        <div className={`flex-1 overflow-y-auto listings-scroll min-h-0 ${showMap ? 'hidden md:block' : 'block'}`}>
           {filteredTherapists.length === 0 ? (
             <div className="p-8 text-center">
               <div className="w-16 h-16 bg-cream rounded-full flex items-center justify-center mx-auto mb-4">
